@@ -1,0 +1,33 @@
+.input {
+  width: 80%;
+  padding: 15px 22px;
+  border-radius: 8px;
+  border: 1px solid #ececec;
+  outline: none;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  &:focus {
+    border-color: #0d6efd96;
+  }
+}
+
+@media (max-width: 767px) {
+  .input {
+    width: 100%;
+  }
+}
+.errorInput {
+  border-color: #e85858a6;
+}
+.error {
+  margin-top: -14px;
+  font-size: 14px;
+  color: #e85858 !important;
+}
+
+.errorCheck + label {
+  color: #e85858ed;
+}
+
+p {
+}

@@ -1,0 +1,139 @@
+.wishlist {
+  header {
+    margin-bottom: 50px;
+    h1 {
+      color: #33335e;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    h6 {
+      color: #7e7e7e;
+      font-weight: 600;
+      span {
+        color: #0d6efd;
+      }
+    }
+  }
+  .tableBox {
+    overflow-x: auto;
+    table {
+      border: 1px solid #e9ecef;
+      width: 100%;
+      min-width: 710px;
+      thead {
+        th {
+          background-color: #ececec;
+          padding: 18px 0;
+          font-size: 17px;
+          font-weight: 700;
+          color: #33335e;
+        }
+        th:first-of-type {
+          padding-left: 30px;
+        }
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          padding: 15px 0;
+        }
+        td:first-of-type {
+          padding-left: 30px;
+        }
+        .product {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          .image {
+            img {
+              max-width: 100px;
+              border: 1px solid #ececec;
+              border-radius: 15px;
+            }
+          }
+          .text {
+            p {
+              margin-bottom: -4px;
+              color: #0d6efd;
+              font-weight: 600;
+            }
+            .rate {
+              img {
+                width: 14px;
+              }
+            }
+          }
+        }
+        .price {
+          font-size: 28px;
+          font-weight: 600;
+          color: #0d6efd;
+        }
+        .stock {
+          background-color: #0d6efd2e;
+          color: #0d6efd;
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          font-weight: 600;
+        }
+        .outStock {
+          color: #f74b81;
+          background: #fde0e9;
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          font-weight: 600;
+        }
+        button {
+          background-color: #0d6efd;
+          border: 1px solid transparent;
+          font-size: 13px;
+          padding: 8px 16px;
+          border-radius: 4px;
+          font-weight: 600;
+          transition: all 0.5s;
+          a {
+            color: white;
+          }
+          &:hover {
+            background-color: #065cda;
+          }
+        }
+        svg {
+          color: #7e7e7e;
+          cursor: pointer;
+          transition: all 0.5s;
+          &:hover {
+            color: #ed5b5bfc;
+          }
+        }
+      }
+    }
+  }
+  .noWishlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 100%;
+    }
+    button {
+      background-color: #d73d5c;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      outline: none;
+      transition: all 0.5s;
+      color: white;
+      a {
+        color: white;
+        border: none;
+      }
+      &:hover {
+        background-color: #f8496c;
+        transform: translateY(-4px);
+      }
+    }
+  }
+}

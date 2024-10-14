@@ -1,0 +1,41 @@
+.services {
+  padding-top: 30px;
+  border-top: 1px solid #dee2e6;
+  .service {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .imag {
+      svg {
+        height: 36px;
+        width: 36px;
+      }
+    }
+    .text {
+      text-align: center;
+      h4 {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 14px;
+        color: #777;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .services {
+    .service {
+      flex-direction: row;
+      justify-content: start;
+      margin-bottom: 10px;
+      .text {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.categoryComponent {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  div {
+    cursor: pointer;
+    transition: all 0.5s;
+    .imag {
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+    }
+    .text {
+      margin-top: 8px;
+      text-align: center;
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+      }
+      p {
+        font-size: 14px;
+        margin-top: -5px;
+        color: gray;
+      }
+    }
+    &:hover {
+      scale: 1.01;
+    }
+    &:hover .imag img {
+      border: 1px solid #0d6efd;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .categoryComponent {
+    justify-content: center;
+    gap: 20px;
+  }
+}

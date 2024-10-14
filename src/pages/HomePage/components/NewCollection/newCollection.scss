@@ -1,0 +1,76 @@
+.newCollection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+  .cardCommon {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    padding-bottom: 40px;
+    border-radius: 4px;
+    gap: 12px;
+    h1 {
+      font-size: 30px;
+    }
+    .newText {
+      margin-bottom: 5px !important;
+    }
+    img {
+      max-width: 100%;
+      width: 200px;
+    }
+    button {
+      border-radius: 2px;
+      margin-top: 5px;
+      a {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        width: 98px;
+        height: 28px;
+        padding: 4px;
+        font-size: 15px;
+      }
+    }
+  }
+  .card1 {
+    background-color: #f8d7da;
+  }
+  .card2 {
+    background-color: #cfe2ff;
+    .text {
+      .cameraPrice {
+        font-size: 20px;
+        color: gray;
+      }
+    }
+  }
+}
+@media (max-width: 912px) {
+  .newCollection {
+    flex-direction: column;
+    gap: 40px;
+    .cardCommon {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .newCollection {
+    .cardCommon {
+      h1 {
+        font-size: 22px;
+      }
+      .newText {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.coreProduct {
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px 12px;
+  h3 {
+    font-size: 26px;
+    color: #212529;
+  }
+  p {
+    color: #212529;
+    font-weight: 200;
+  }
+  h4 {
+    margin-bottom: 26px;
+    font-weight: 600;
+  }
+  button {
+    a {
+      color: white;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+}

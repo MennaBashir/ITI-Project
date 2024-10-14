@@ -1,0 +1,135 @@
+.FooterComponent {
+  background-color: #f8f9fa;
+  .FooterContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .boxFooter {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 20px !important;
+        margin-bottom: 15px !important;
+      }
+    }
+    .about {
+      p {
+        font-size: 14px;
+        color: #333;
+        width: 250px;
+      }
+      .aboutInfo {
+        display: flex;
+        gap: 3px;
+        font-size: 15px;
+        svg {
+          width: 18px;
+          color: #0d6efd;
+        }
+      }
+    }
+    .links {
+      ul {
+        margin-left: -30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 11px;
+        font-size: 16px;
+        color: #333;
+        margin-top: 16px;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+          &:hover {
+            animation: moveLink 0.4s linear forwards;
+          }
+          &:hover a {
+            color: #0d6efd !important;
+          }
+        }
+      }
+    }
+    .newsletter {
+      p {
+        color: #333;
+        font-size: 15px;
+      }
+      form {
+        display: flex;
+        width: 240px;
+        input {
+          border-radius: 3px !important;
+        }
+        button {
+          border-radius: 3px !important;
+        }
+      }
+      .follow {
+        p {
+          margin-top: 12px;
+          font-size: 18px;
+        }
+        ul {
+          display: flex;
+          gap: 10px;
+          margin-left: -32px;
+          li {
+            list-style: none;
+            padding: 4px 6px;
+            background-color: white;
+            border-radius: 2px;
+            a {
+              svg {
+                width: 22px;
+                color: #0d6efd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .TypesPay {
+    background-color: white;
+
+    .TypesPayContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 2px;
+      flex-wrap: wrap;
+      .copyRight {
+        color: gray;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        li {
+          list-style: none;
+          a {
+            img {
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes moveLink {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(10px, 4px);
+  }
+}

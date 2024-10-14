@@ -1,0 +1,136 @@
+.compare {
+  header {
+    margin-bottom: 50px;
+    h1 {
+      color: #33335e;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    h6 {
+      color: #7e7e7e;
+      font-weight: 600;
+      span {
+        color: #0d6efd;
+      }
+    }
+  }
+  .tableBox {
+    overflow-x: auto;
+    table {
+      width: 100%;
+      min-width: 500px;
+      th {
+        color: #b6b6b6;
+        padding: 30px;
+        border: 1px solid #ececec;
+        font-weight: 600;
+        vertical-align: middle;
+      }
+      td {
+        border: 1px solid #ececec;
+        padding: 30px 0;
+        text-align: center;
+        vertical-align: middle;
+      }
+      tr {
+      }
+      img {
+        max-width: 200px;
+      }
+      .title {
+        color: #33335e;
+        font-weight: 600;
+      }
+      .description {
+        color: #b6b6b6;
+        font-size: 14px;
+      }
+      .price {
+        font-size: 24px;
+        font-weight: 600;
+        color: #0d6efd;
+      }
+      .stock {
+        background-color: #0d6efd2e;
+        color: #0d6efd;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .outStock {
+        color: #f74b81;
+        background: #fde0e9;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .rate {
+        svg {
+          fill: #ffc107;
+          color: #ffc107;
+          width: 16px;
+        }
+      }
+      button {
+        background-color: #0d6efd;
+        color: white;
+        border: 1px solid transparent;
+        font-size: 12px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: all 0.5s;
+        svg {
+          color: white;
+          width: 16px;
+          margin-right: 6px;
+        }
+        &:hover {
+          background-color: #065cda;
+        }
+      }
+
+      .remove {
+        color: #b6b6b6;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.5s;
+        svg {
+          color: #b6b6b6;
+          width: 17px;
+          transition: all 0.5s;
+        }
+        &:hover {
+          color: #ed5b5bfc;
+        }
+        &:hover svg {
+          color: #ed5b5bfc;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .compare {
+    .tableBox {
+      table {
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 776px) {
+  .compare {
+    .tableBox {
+      table {
+        img {
+          max-width: 130px;
+        }
+      }
+    }
+  }
+}

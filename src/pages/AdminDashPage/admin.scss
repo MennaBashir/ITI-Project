@@ -1,0 +1,118 @@
+.admin {
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #33334e;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 18px;
+    color: #848383;
+  }
+  .bigBox {
+    .big1 {
+      .shortDesc {
+        input {
+          height: 100px;
+          padding-bottom: 88px;
+        }
+      }
+      .longDesc {
+        input {
+          height: 130px;
+          padding-bottom: 100px;
+        }
+      }
+    }
+    .big2 {
+      .price {
+        display: flex;
+        gap: 50px;
+
+        input {
+          width: 100px;
+        }
+      }
+    }
+  }
+  .smallBox {
+    .images {
+      input {
+        width: fit-content;
+      }
+      .image {
+        height: 139px;
+        margin-top: 40px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23828282D4' stroke-width='3' stroke-dasharray='20%2c 17' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        margin-bottom: 50px;
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          padding-top: 20px;
+          flex-wrap: wrap;
+          li {
+            position: relative;
+            img {
+              min-width: 50px;
+            }
+            span {
+              position: absolute;
+              left: -8px;
+              cursor: pointer;
+              color: #ff00009c;
+              top: -8px;
+            }
+          }
+        }
+      }
+    }
+
+    .radio {
+      display: flex;
+      gap: 7px;
+      color: #333;
+      cursor: pointer;
+      margin-bottom: 6px;
+    }
+    .category {
+      display: flex;
+      gap: 50px;
+    }
+    .small1 {
+      margin-bottom: 20px;
+    }
+  }
+  button {
+    border: 1px solid transparent;
+    background-color: #0d6efd;
+    color: white;
+    padding: 11px 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    transition: all 0.5s;
+    &:hover {
+      transform: translateY(-4px);
+      background-color: #0d6efde8;
+    }
+  }
+  .exit {
+    width: fit-content;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ff000094;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.4s;
+    svg {
+      width: 20px;
+    }
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}
