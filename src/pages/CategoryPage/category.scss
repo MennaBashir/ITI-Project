@@ -41,11 +41,23 @@
       .button {
         bottom: 18px;
       }
+      &:hover .hoverImage {
+        opacity: 1;
+        animation: imageHover1 0.5s linear forwards;
+      }
     }
   }
   .paginateBox {
     position: absolute;
     right: 26px;
     width: fit-content;
+  }
+}
+@keyframes imageHover1 {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(-200px);
   }
 }

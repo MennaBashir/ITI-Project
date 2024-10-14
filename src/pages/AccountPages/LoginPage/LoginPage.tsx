@@ -44,7 +44,7 @@ export default function LoginPage() {
       ) {
         navigate("/admin");
         setTimeout(() => {
-          toast.success(`Welcome ${findEmail?.userName}`, {
+          toast.success(`Welcome Menna`, {
             duration: 3000,
           });
         }, 1000);

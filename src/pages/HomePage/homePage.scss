@@ -145,3 +145,39 @@
     opacity: 0;
   }
 }
+@media (max-width: 500px) {
+  .box {
+    .button {
+      width: 80%;
+      left: 17px;
+      bottom: 132px;
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 389px) {
+  @keyframes imageHover {
+    0% {
+      transform: translateX(-98px);
+    }
+    100% {
+      transform: translateX(-144px);
+    }
+  }
+  .box {
+    .iconLeft {
+      ul {
+        li {
+          padding: 3px 7px;
+          a {
+            svg {
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
